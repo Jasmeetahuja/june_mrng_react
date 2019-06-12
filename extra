@@ -1,0 +1,50 @@
+Java => tomcat/apache
+.Net =>iSS
+PhP => Xamp
+Javascript Frameworks => NodeJs
+
+
+
+>>>>>>>Package.json<<<<<<<<<<
+> entrypoint
+> description
+> packages
+> versions
+
+
+json
+{
+    {
+        name:'abc',
+        class:'UI'
+    },
+    {
+        name:'def',
+        class:'AI'
+    }
+}
+
+
+>>>>Steps to build package.json<<<<
+Step1 => Navigate the folder using cmd/terminal
+Step2 => initializing the things
+      npm init
+Step3 => Answer all the questions
+Step4 => type yes
+
+
+>>>>>Installing Packages<<<<
+1 Local packages => local to the folder
+2 Global packages => local to the system
+
+>>>>Local Packages<<<
+Installing local packages
+Step1 => navigate to folder
+Step2=> npm install <package name>/npm i <package name>
+
+
+>>>>Global Packages<<<
+the packages that helps to start app, create app, monitor app and build app
+Installing Global Packages
+Step1 => navigate to the folder
+Step2 => npm i -g
