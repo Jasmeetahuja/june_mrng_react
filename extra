@@ -48,3 +48,36 @@ the packages that helps to start app, create app, monitor app and build app
 Installing Global Packages
 Step1 => navigate to the folder
 Step2 => npm i -g
+
+
+
+>>>>Components<<<<<
+1=> Class based components
+2=> Funtional components
+
+
+>>>>Function in ES5<<<<
+ function add(a,b){
+     return a+b
+ 
+ }
+ add(2,4)
+
+
+ >>>>>Function in ES6<<<<
+
+ var add = ()=>{return a+b}
+ add(3,4)
+
+
+
+ let and const
+
+
+ var a ///declaration
+ a = 10 /// assignment
+
+
+ var=> you can redeclare & reassign
+ let=> can't redeclare & reassign
+ const=> neither redeclare nor reassign
