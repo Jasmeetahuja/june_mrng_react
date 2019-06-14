@@ -81,3 +81,14 @@ Step2 => npm i -g
  var=> you can redeclare & reassign
  let=> can't redeclare & reassign
  const=> neither redeclare nor reassign
+
+
+ <React.Fragement>
+
+
+
+ >>>>>>>>State & Props<<<<<<<<<
+
+
+ A      ------Props------  B
+ State                     State

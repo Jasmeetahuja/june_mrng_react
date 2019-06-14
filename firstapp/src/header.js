@@ -1,15 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, {Component} from 'react';
+
+import './header.css';
 
 
-const Header =()=> {
-    return(
-        <div>
-            <center>
-              <h1>  React App</h1>
-            </center>
-        </div>
-    )
+class Header extends Component{
+
+    inputChange(event){
+        console.log(event.target.value)
+    }
+    render(){
+
+        return(
+            <header>
+              <div className="logo"
+              onClick={()=>{console.log('Clicked')}}>Logo</div>
+              <center>
+              <input onChange={this.inputChange}/>
+              </center>
+              <hr/>
+            </header>
+
+        )
+    }
 }
+
+
+
 
 export default Header;
