@@ -10,21 +10,29 @@ import NewsList from './component/news_list';
 
 class App extends Component{
 
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
 
         this.state={
-            news:JSON
+            news:JSON,
+            filtered:JSON
 
         }
     }
 
+    filterNews(keyword){
+        let output = this.state.news.filter((item)=>{
+            return item.title.toLowerCase().indexOf(keyword.toLowerCase()) > -1
+        })
+        this.setState({filtered:output})
+
+    }
+
     render(){
-        console.log(">>>",this.state.news)
     return(
         <div>
-            <Header/>
-            <NewsList/>
+            <Header userInput ={(uinput)=> this.filterNews(uinput)}/>
+            <NewsList newsdata ={this.state.filtered}/>
         </div>
             
         )
