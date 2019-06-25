@@ -187,3 +187,9 @@ Grid Basic
 Button
 Panel
 Navbar
+
+
+>>>.Fake API<<<<<
+npm install -g json-server
+
+json-server --watch db.json --port 8900
