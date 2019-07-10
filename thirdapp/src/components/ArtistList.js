@@ -29,7 +29,7 @@ const ArtistList = (props) => {
 
 
     return(
-        <div className ="artist_list">
+        <div className="artists_list">
         <h4>Artist List</h4>
         {renderArtist(props)}
         </div>
