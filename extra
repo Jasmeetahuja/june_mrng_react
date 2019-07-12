@@ -204,3 +204,11 @@ json-server --watch db.json --port 8900
 View=> Action=> Reducers => Store => View
 
 => npm i redux react-redux
+
+
+Action return
+type
+payload
+
+component => display part
+container => connecting to redux
