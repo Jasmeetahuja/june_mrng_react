@@ -212,3 +212,9 @@ payload
 
 component => display part
 container => connecting to redux
+
+
+****For second Application of Redux****
+step 1 => create-react-app redux2
+step 2 => npm i redux react-redux redux-promise
+step 3 => npm i react-router-dom react-slick
