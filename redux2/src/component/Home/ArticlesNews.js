@@ -5,9 +5,9 @@ const renderArticles = ({articlesdata}) => {
     if(articlesdata){
         return articlesdata.map((item) => {
             return(
-                <Link to="/" key={item.id} className="item">
+                <Link to={`/articles/${item.id}`} key={item.id} className="item">
                     <div className="left"
-                    style={{background: `url/(images/articles/${item.img})`}}>
+                    style={{background: `url(images/articles/${item.img})`}}>
                     </div>
                     <div className="right">
                         <h3>{item.title}</h3>
@@ -36,10 +36,10 @@ const renderArticles = ({articlesdata}) => {
 const ArticleNews = (props) => {
     return(
         <div className="other-news">
-        <h2>ArticleNews</h2>
-        <div className="other-news-items">
-            {renderArticles(props)}
-        </div>
+           <h2>ArticleNews</h2>
+               <div className="other-news-items">
+                   {renderArticles(props)}
+               </div>
         </div>
     )
 }
