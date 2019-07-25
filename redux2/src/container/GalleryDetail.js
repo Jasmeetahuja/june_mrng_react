@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 class GalleryDetail extends Component{
     render(){
@@ -10,4 +12,14 @@ class GalleryDetail extends Component{
     }
 }
 
-export default GalleryDetail;
+function mapStateToProps(state){
+    return {
+        details:state.gallery
+    }
+}
+
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({}, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(GalleryDetail);
